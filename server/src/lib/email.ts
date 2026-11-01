@@ -68,9 +68,9 @@ export const sendVerificationEmail = async (email: string, otp: string): Promise
       ].join("\n"),
       html: `
         <div style="font-family:Arial,sans-serif;color:#3B3C3E;line-height:1.55;max-width:560px;margin:auto">
-          <h1 style="color:#A01C33;font-size:22px">Storefront Ratings</h1>
+          <h1 style="color:#2874F0;font-size:22px">ShopPulse</h1>
           <p>Use this verification code to finish creating your account:</p>
-          <p style="font-size:30px;font-weight:700;letter-spacing:8px;color:#A01C33">${safeOtp}</p>
+          <p style="font-size:30px;font-weight:700;letter-spacing:8px;color:#2874F0">${safeOtp}</p>
           <p>This code expires in <strong>10 minutes</strong>.</p>
           <p>If you did not request this, you can safely ignore this email.</p>
         </div>`,

@@ -156,12 +156,12 @@ function AuthLayout({
   useDocumentTitle(title);
   return (
     <main className="auth-layout">
-      <section className="auth-panel auth-panel--intro" aria-label="About StoreRate">
-        <Link className="brand brand--light" to="/login" aria-label="StoreRate sign in">
+      <section className="auth-panel auth-panel--intro" aria-label="About ShopPulse">
+        <Link className="brand brand--light" to="/login" aria-label="ShopPulse sign in">
           <span className="brand__mark" aria-hidden="true">
             S
           </span>
-          <span>StoreRate</span>
+          <span>ShopPulse</span>
         </Link>
         <div className="auth-panel__copy">
           <p className="eyebrow eyebrow--light">Trusted feedback, simply managed</p>
@@ -241,7 +241,7 @@ export function LoginPage() {
   };
 
   return (
-    <AuthLayout title="Welcome back" description="Sign in to continue to your StoreRate workspace.">
+    <AuthLayout title="Welcome back" description="Sign in to continue to your ShopPulse workspace.">
       <form className="form-stack" onSubmit={handleSubmit} noValidate>
         {formError ? <InlineAlert>{formError}</InlineAlert> : null}
         <InputField
@@ -272,7 +272,7 @@ export function LoginPage() {
         </button>
       </form>
       <p className="auth-card__footer">
-        New to StoreRate? <Link to="/register">Create a customer account</Link>
+        New to ShopPulse? <Link to="/register">Create a customer account</Link>
       </p>
     </AuthLayout>
   );
@@ -352,7 +352,7 @@ export function RegisterPage() {
   return (
     <AuthLayout
       title="Create your account"
-      description="Join StoreRate to discover stores and share useful feedback."
+      description="Join ShopPulse to discover stores and share useful feedback."
     >
       <form className="form-stack" onSubmit={handleSubmit} noValidate>
         {formError ? <InlineAlert>{formError}</InlineAlert> : null}
@@ -600,7 +600,7 @@ export function PrivilegedInviteRegisterPage({ expectedRole }: { expectedRole: P
   return (
     <AuthLayout
       title={`Complete ${roleName.toLowerCase()} registration`}
-      description="Use the confidential link and registration code supplied by a StoreRate administrator."
+      description="Use the confidential link and registration code supplied by a ShopPulse administrator."
     >
       {isLoading ? <LoadingState label="Validating your invitation" /> : null}
       {!isLoading && formError && !invitation ? (

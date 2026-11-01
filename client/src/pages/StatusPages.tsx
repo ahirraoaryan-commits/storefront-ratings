@@ -18,11 +18,11 @@ function StatusLayout({
   useDocumentTitle(title);
   return (
     <main className="status-page">
-      <Link className="brand" to="/" aria-label="StoreRate home">
+      <Link className="brand" to="/" aria-label="ShopPulse home">
         <span className="brand__mark" aria-hidden="true">
           S
         </span>
-        <span>StoreRate</span>
+        <span>ShopPulse</span>
       </Link>
       <section className="status-card">
         <p className="status-card__code" aria-hidden="true">

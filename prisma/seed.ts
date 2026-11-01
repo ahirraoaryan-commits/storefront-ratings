@@ -25,41 +25,41 @@ const upsertUser = async (
 
 const main = async () => {
   const admin = await upsertUser(
-    "Alexandra Morgan Administrator",
-    "admin@storefront.local",
-    "14 Market Street, Pune, Maharashtra 411001",
+    "Ananya Mehta Administrator",
+    "admin@shoppulse.local",
+    "22 Residency Road, Bengaluru, Karnataka 560025",
     "ADMIN",
   );
   const owner = await upsertUser(
-    "Priyanka Shah Store Owner",
-    "owner@storefront.local",
-    "28 Koregaon Park, Pune, Maharashtra 411001",
+    "Kabir Nair Store Owner",
+    "owner@shoppulse.local",
+    "17 Indiranagar 100 Feet Road, Bengaluru, Karnataka 560038",
     "STORE_OWNER",
   );
   const customer = await upsertUser(
-    "Rohan Deshmukh Customer User",
-    "user@storefront.local",
-    "6 Baner Road, Pune, Maharashtra 411045",
+    "Ishita Rao Customer User",
+    "customer@shoppulse.local",
+    "9 Jayanagar 4th Block, Bengaluru, Karnataka 560011",
     "NORMAL_USER",
   );
 
   const store = await prisma.store.upsert({
-    where: { email: "hello@harvesttable.local" },
+    where: { email: "hello@urbanbasket.local" },
     update: {},
     create: {
-      name: "Harvest Table Market",
-      email: "hello@harvesttable.local",
-      address: "21 Koregaon Park, Pune, Maharashtra 411001",
+      name: "Urban Basket",
+      email: "hello@urbanbasket.local",
+      address: "31 Church Street, Bengaluru, Karnataka 560001",
       ownerId: owner.id,
     },
   });
   await prisma.store.upsert({
-    where: { email: "contact@paperandpine.local" },
+    where: { email: "care@techharbor.local" },
     update: {},
     create: {
-      name: "Paper & Pine Bookstore",
-      email: "contact@paperandpine.local",
-      address: "8 FC Road, Pune, Maharashtra 411004",
+      name: "Tech Harbor",
+      email: "care@techharbor.local",
+      address: "44 Commercial Street, Bengaluru, Karnataka 560001",
     },
   });
   await prisma.rating.upsert({

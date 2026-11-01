@@ -2,7 +2,7 @@ import { useEffect, type ReactNode } from "react";
 
 export function useDocumentTitle(title: string) {
   useEffect(() => {
-    document.title = `${title} | StoreRate`;
+    document.title = `${title} | ShopPulse`;
   }, [title]);
 }
 
@@ -19,7 +19,7 @@ export function PageHeader({
   return (
     <div className="page-header">
       <div>
-        <p className="eyebrow">StoreRate workspace</p>
+        <p className="eyebrow">ShopPulse workspace</p>
         <h1>{title}</h1>
         <p>{description}</p>
       </div>

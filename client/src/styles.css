@@ -9,30 +9,31 @@
     "Segoe UI",
     sans-serif;
   color: #303033;
-  background: #fbfaf9;
+  background: #f1f4f9;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  --maroon-950: #4d0c19;
-  --maroon-900: #651023;
-  --maroon-800: #7d1529;
-  --maroon-700: #921b32;
-  --maroon-600: #a01c33;
-  --maroon-100: #f9e9ed;
-  --maroon-50: #fdf6f7;
+  --blue-950: #123b75;
+  --blue-900: #174ea6;
+  --blue-800: #1d5fc0;
+  --blue-700: #2468d8;
+  --blue-600: #2874f0;
+  --blue-100: #e8f1ff;
+  --accent: #ffe500;
+  --blue-50: #f4f8ff;
   --ink: #303033;
   --ink-muted: #66666c;
   --line: #dedde0;
   --line-strong: #c9c7cb;
-  --canvas: #fbfaf9;
+  --canvas: #f1f4f9;
   --surface: #ffffff;
-  --surface-soft: #f6f4f3;
+  --surface-soft: #f1f5fb;
   --success: #176545;
   --success-soft: #e8f6ef;
   --danger: #ad2639;
   --danger-soft: #fff0f2;
   --warning: #9e6811;
-  --shadow-sm: 0 2px 6px rgb(32 22 26 / 0.05);
-  --shadow-md: 0 12px 30px rgb(49 24 31 / 0.1);
+  --shadow-sm: 0 2px 6px rgb(20 55 100 / 0.05);
+  --shadow-md: 0 12px 30px rgb(20 55 100 / 0.1);
   --radius-sm: 8px;
   --radius: 12px;
   --radius-lg: 18px;
@@ -76,12 +77,12 @@ textarea:disabled {
 }
 
 a {
-  color: var(--maroon-700);
+  color: var(--blue-700);
   text-underline-offset: 3px;
 }
 
 a:hover {
-  color: var(--maroon-950);
+  color: var(--blue-950);
 }
 
 h1,
@@ -118,12 +119,12 @@ address {
 }
 
 ::selection {
-  background: #f2cdd5;
-  color: var(--maroon-950);
+  background: #dce9ff;
+  color: var(--blue-950);
 }
 
 :focus-visible {
-  outline: 3px solid #bd5770;
+  outline: 3px solid #79aaf7;
   outline-offset: 3px;
 }
 
@@ -145,7 +146,7 @@ address {
 
 .eyebrow {
   margin-bottom: 0.55rem;
-  color: var(--maroon-700);
+  color: var(--blue-700);
   font-size: 0.72rem;
   font-weight: 750;
   letter-spacing: 0.11em;
@@ -153,14 +154,14 @@ address {
 }
 
 .eyebrow--light {
-  color: #f7d9df;
+  color: #dce9ff;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
-  color: var(--maroon-900);
+  color: var(--blue-900);
   font-size: 1.1rem;
   font-weight: 780;
   letter-spacing: -0.03em;
@@ -168,7 +169,7 @@ address {
 }
 
 .brand:hover {
-  color: var(--maroon-950);
+  color: var(--blue-950);
 }
 
 .brand--light,
@@ -182,7 +183,7 @@ address {
   height: 2rem;
   place-items: center;
   border-radius: 8px;
-  background: var(--maroon-700);
+  background: var(--blue-700);
   color: #fff;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.12rem;
@@ -220,15 +221,15 @@ address {
 }
 
 .button--primary {
-  background: var(--maroon-700);
+  background: var(--blue-700);
   color: #fff;
-  box-shadow: 0 2px 4px rgb(102 16 35 / 0.16);
+  box-shadow: 0 2px 4px rgb(40 116 240 / 0.18);
 }
 
 .button--primary:hover:not(:disabled) {
-  background: var(--maroon-900);
+  background: var(--blue-900);
   color: #fff;
-  box-shadow: 0 6px 14px rgb(102 16 35 / 0.22);
+  box-shadow: 0 6px 14px rgb(40 116 240 / 0.24);
 }
 
 .button--secondary {
@@ -238,21 +239,21 @@ address {
 }
 
 .button--secondary:hover:not(:disabled) {
-  border-color: var(--maroon-700);
-  background: var(--maroon-50);
-  color: var(--maroon-900);
+  border-color: var(--blue-700);
+  background: var(--blue-50);
+  color: var(--blue-900);
 }
 
 .button--quiet {
   min-height: auto;
   padding: 0.4rem 0.35rem;
   background: transparent;
-  color: var(--maroon-700);
+  color: var(--blue-700);
 }
 
 .button--quiet:hover:not(:disabled) {
-  background: var(--maroon-50);
-  color: var(--maroon-950);
+  background: var(--blue-50);
+  color: var(--blue-950);
 }
 
 .button--full {
@@ -267,14 +268,14 @@ address {
   padding: 0;
   border: 0;
   background: transparent;
-  color: var(--maroon-700);
+  color: var(--blue-700);
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 .text-button:hover:not(:disabled) {
-  color: var(--maroon-950);
+  color: var(--blue-950);
 }
 
 .icon-button {
@@ -311,7 +312,7 @@ address {
   min-height: 100%;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--maroon-900);
+  background: var(--blue-900);
   color: #fff;
 }
 
@@ -332,14 +333,14 @@ address {
 .auth-panel__copy p:not(.eyebrow) {
   max-width: 31rem;
   margin-bottom: 0;
-  color: #f7e9ec;
+  color: #e6efff;
   font-size: 1.05rem;
   line-height: 1.7;
 }
 
 .auth-panel__footnote {
   margin-bottom: 0;
-  color: #eabfc8;
+  color: #d7e6ff;
   font-size: 0.85rem;
 }
 
@@ -441,8 +442,8 @@ address {
 .sort-controls select:focus,
 .filter-panel input:focus,
 .filter-panel select:focus {
-  border-color: var(--maroon-700);
-  box-shadow: 0 0 0 3px rgb(160 28 51 / 0.13);
+  border-color: var(--blue-700);
+  box-shadow: 0 0 0 3px rgb(40 116 240 / 0.16);
 }
 
 .field input[aria-invalid="true"],
@@ -481,14 +482,14 @@ address {
   border: 0;
   border-radius: 6px;
   background: transparent;
-  color: var(--maroon-700);
+  color: var(--blue-700);
   font-size: 0.76rem;
   font-weight: 750;
   transform: translateY(-50%);
 }
 
 .password-input__toggle:hover {
-  background: var(--maroon-50);
+  background: var(--blue-50);
 }
 
 .inline-alert {
@@ -508,7 +509,7 @@ address {
 }
 
 .inline-alert--info {
-  border-color: #c6bdc0;
+  border-color: #c2d2eb;
   background: var(--surface-soft);
   color: #514d50;
 }
@@ -578,15 +579,15 @@ address {
   border-radius: var(--radius-sm);
   outline: none;
   background: #fff;
-  color: var(--maroon-900);
+  color: var(--blue-900);
   font-size: 1.28rem;
   font-weight: 780;
   text-align: center;
 }
 
 .otp-input:focus {
-  border-color: var(--maroon-700);
-  box-shadow: 0 0 0 3px rgb(160 28 51 / 0.13);
+  border-color: var(--blue-700);
+  box-shadow: 0 0 0 3px rgb(40 116 240 / 0.16);
 }
 
 .verification-actions {
@@ -611,10 +612,30 @@ address {
   position: sticky;
   z-index: 10;
   top: 0;
-  border-bottom: 1px solid var(--line);
-  background: rgb(255 255 255 / 0.96);
-  box-shadow: 0 1px 0 rgb(39 31 33 / 0.02);
+  border-bottom: 3px solid #ffe500;
+  background: #2874f0;
+  box-shadow: 0 1px 0 rgb(20 55 100 / 0.02);
   backdrop-filter: blur(10px);
+}
+
+.app-header .brand,
+.app-header .brand:hover {
+  color: #fff;
+}
+
+.app-header .brand__mark {
+  background: #fff;
+  color: #2874f0;
+  box-shadow: none;
+}
+
+.app-header .button--quiet,
+.app-header .button--quiet:hover:not(:disabled) {
+  color: #fff;
+}
+
+.app-header .button--quiet:hover:not(:disabled) {
+  background: rgb(255 255 255 / 0.14);
 }
 
 .app-header__inner {
@@ -644,20 +665,20 @@ address {
 .nav-link {
   padding: 0.55rem 0.68rem;
   border-radius: 7px;
-  color: #5f5b5e;
+  color: #fff;
   font-size: 0.86rem;
   font-weight: 680;
   text-decoration: none;
 }
 
 .nav-link:hover {
-  background: var(--maroon-50);
-  color: var(--maroon-900);
+  background: rgb(255 255 255 / 0.14);
+  color: #ffe500;
 }
 
 .nav-link--active {
-  background: var(--maroon-100);
-  color: var(--maroon-900);
+  background: rgb(255 255 255 / 0.18);
+  color: #ffe500;
 }
 
 .account-menu {
@@ -676,7 +697,7 @@ address {
 
 .account-menu__name {
   overflow: hidden;
-  color: var(--ink);
+  color: #fff;
   font-size: 0.8rem;
   font-weight: 720;
   text-overflow: ellipsis;
@@ -684,7 +705,7 @@ address {
 }
 
 .account-menu__role {
-  color: var(--ink-muted);
+  color: #dbe8ff;
   font-size: 0.72rem;
 }
 
@@ -696,7 +717,7 @@ address {
   border: 1px solid var(--line-strong);
   border-radius: var(--radius-sm);
   background: #fff;
-  color: var(--maroon-900);
+  color: var(--blue-900);
   font-size: 1.16rem;
 }
 
@@ -771,8 +792,8 @@ address {
 .loading-dot {
   width: 0.8rem;
   height: 0.8rem;
-  border: 2px solid #e3b8c1;
-  border-top-color: var(--maroon-700);
+  border: 2px solid #a9c9ff;
+  border-top-color: var(--blue-700);
   border-radius: 50%;
   animation: load-spin 700ms linear infinite;
 }
@@ -790,8 +811,8 @@ address {
   place-items: center;
   margin-bottom: 0.8rem;
   border-radius: 50%;
-  background: var(--maroon-50);
-  color: var(--maroon-700);
+  background: var(--blue-50);
+  color: var(--blue-700);
   font-size: 1.35rem;
   font-weight: 800;
 }
@@ -854,7 +875,7 @@ address {
 }
 
 .toast--info {
-  border-left: 4px solid var(--maroon-700);
+  border-left: 4px solid var(--blue-700);
 }
 
 /* Member directory */
@@ -916,8 +937,8 @@ address {
 }
 
 .store-card:hover {
-  border-color: #cdb8bc;
-  box-shadow: 0 8px 22px rgb(50 30 35 / 0.08);
+  border-color: #b8cdf0;
+  box-shadow: 0 8px 22px rgb(20 55 100 / 0.08);
   transform: translateY(-2px);
 }
 
@@ -953,7 +974,7 @@ address {
 .store-card__email {
   overflow: hidden;
   margin: 0.5rem 0 0;
-  color: var(--maroon-700);
+  color: var(--blue-700);
   font-size: 0.8rem;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -991,7 +1012,7 @@ address {
 }
 
 .rating-display__star {
-  color: #d68f11;
+  color: #f5b800;
   font-size: 1.05em;
 }
 
@@ -1003,7 +1024,7 @@ address {
   display: grid;
   place-items: center;
   padding: 1rem;
-  background: rgb(40 28 32 / 0.5);
+  background: rgb(14 32 56 / 0.5);
 }
 
 .dialog {
@@ -1076,13 +1097,13 @@ address {
 }
 
 .rating-choice:has(input:focus-visible) {
-  outline: 3px solid #bd5770;
+  outline: 3px solid #79aaf7;
   outline-offset: 3px;
 }
 
 .rating-choice:hover,
 .rating-choice--selected {
-  border-color: #cf8d21;
+  border-color: #f5b800;
   background: #fffaed;
   color: #a36709;
 }
@@ -1116,7 +1137,7 @@ address {
 .metric-card strong {
   display: block;
   margin-bottom: 0.45rem;
-  color: var(--maroon-900);
+  color: var(--blue-900);
   font-size: clamp(1.8rem, 4vw, 2.65rem);
   letter-spacing: -0.045em;
 }
@@ -1151,7 +1172,7 @@ address {
 }
 
 .quick-link-card:hover {
-  border-color: #c7a0a8;
+  border-color: #c6d8f5;
   box-shadow: var(--shadow-md);
   color: inherit;
   transform: translateY(-2px);
@@ -1163,8 +1184,8 @@ address {
   height: 2.3rem;
   place-items: center;
   border-radius: 8px;
-  background: var(--maroon-100);
-  color: var(--maroon-800);
+  background: var(--blue-100);
+  color: var(--blue-800);
   font-size: 1.2rem;
 }
 
@@ -1185,9 +1206,9 @@ address {
   gap: 1rem;
   margin-top: 1.25rem;
   padding: clamp(1.05rem, 3vw, 1.5rem);
-  border: 1px solid #d9b5bd;
+  border: 1px solid #c8daf7;
   border-radius: var(--radius);
-  background: var(--maroon-50);
+  background: var(--blue-50);
   box-shadow: var(--shadow-sm);
 }
 
@@ -1297,7 +1318,7 @@ address {
 }
 
 .data-table th {
-  background: #f8f6f6;
+  background: #f6f9ff;
   color: #625e61;
   font-size: 0.75rem;
   font-weight: 750;
@@ -1310,7 +1331,7 @@ address {
 }
 
 .data-table tbody tr:hover {
-  background: #fdfafb;
+  background: #f7faff;
 }
 
 .data-table td {
@@ -1343,7 +1364,7 @@ address {
 }
 
 .sort-button:hover {
-  color: var(--maroon-800);
+  color: var(--blue-800);
 }
 
 .sort-button__icon {
@@ -1352,7 +1373,7 @@ address {
 }
 
 .sort-button__icon--active {
-  color: var(--maroon-700);
+  color: var(--blue-700);
 }
 
 .text-link {
@@ -1377,8 +1398,8 @@ address {
 }
 
 .role-badge--admin {
-  background: #f2e6eb;
-  color: #7c1530;
+  background: #e7f0ff;
+  color: #174ea6;
 }
 
 .role-badge--normal_user {
@@ -1419,8 +1440,8 @@ address {
   flex: 0 0 auto;
   place-items: center;
   border-radius: 50%;
-  background: var(--maroon-100);
-  color: var(--maroon-800);
+  background: var(--blue-100);
+  color: var(--blue-800);
   font-size: 1.12rem;
   font-weight: 800;
 }
@@ -1472,14 +1493,14 @@ address {
   gap: 1.5rem;
   margin-bottom: 1.15rem;
   padding: clamp(1.2rem, 4vw, 1.75rem);
-  border: 1px solid #d9b5bd;
+  border: 1px solid #c8daf7;
   border-radius: var(--radius);
-  background: var(--maroon-50);
+  background: var(--blue-50);
 }
 
 .owner-summary h2 {
   margin-bottom: 0.35rem;
-  color: var(--maroon-900);
+  color: var(--blue-900);
   font-size: 1.45rem;
 }
 
@@ -1494,7 +1515,7 @@ address {
   gap: 0.32rem;
   min-width: 10rem;
   padding-left: 1.5rem;
-  border-left: 1px solid #dfc4ca;
+  border-left: 1px solid #d9e5f7;
 }
 
 .owner-summary__score p {
@@ -1557,7 +1578,7 @@ address {
 
 .status-card__code {
   margin-bottom: 0.35rem;
-  color: #ead0d5;
+  color: #e4efff;
   font-size: clamp(3rem, 10vw, 5.4rem);
   font-weight: 850;
   letter-spacing: -0.08em;
@@ -1731,7 +1752,7 @@ address {
     min-width: 0;
     padding-top: 1rem;
     padding-left: 0;
-    border-top: 1px solid #dfc4ca;
+    border-top: 1px solid #d9e5f7;
     border-left: 0;
   }
 }
@@ -1854,3 +1875,10 @@ address {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Flipkart inspired marketplace accents */
+.eyebrow { color: #2874f0; }
+.brand__mark { border-radius: 50%; background: #2874f0; }
+.button--primary { background: #2874f0; }
+.button--primary:hover:not(:disabled) { background: #174ea6; }
+.rating-display__star { color: #f5b800; }

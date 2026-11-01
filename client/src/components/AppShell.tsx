@@ -56,11 +56,11 @@ export function AppShell() {
     <div className="app-shell">
       <header className="app-header">
         <div className="app-header__inner">
-          <NavLink className="brand" to={destinationForRole(user.role)} aria-label="StoreRate home">
+          <NavLink className="brand" to={destinationForRole(user.role)} aria-label="ShopPulse home">
             <span className="brand__mark" aria-hidden="true">
               S
             </span>
-            <span>StoreRate</span>
+            <span>ShopPulse</span>
           </NavLink>
 
           <button

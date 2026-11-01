@@ -153,7 +153,7 @@ export function AdminDashboardPage() {
     <section className="page-container">
       <PageHeader
         title="Administration overview"
-        description="A concise view of activity across the StoreRate platform."
+        description="A concise view of activity across the ShopPulse platform."
         action={
           <Link className="button button--primary" to="/admin/users/new">
             Add user

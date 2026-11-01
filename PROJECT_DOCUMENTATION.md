@@ -160,7 +160,7 @@ Zod validates API requests, and client forms repeat the rules for immediate fiel
 
 ## Design and accessibility
 
-The interface uses a restrained maroon palette near #A01C33, warm neutral surfaces, charcoal typography, responsive grids/tables, semantic landmarks, visible focus styles, labelled fields, accessible dialogs, and keyboard-operable controls. It includes empty, retryable-error, loading, forbidden, not-found, and global-error states.
+The interface uses a Flipkart-inspired blue-and-yellow palette, cool neutral surfaces, charcoal typography, responsive grids/tables, semantic landmarks, visible focus styles, labelled fields, accessible dialogs, and keyboard-operable controls. It includes empty, retryable-error, loading, forbidden, not-found, and global-error states.
 
 ## Local setup
 
@@ -211,9 +211,9 @@ The seed uses non-destructive upserts: existing demo rows are not overwritten.
 
 | Role          | Email                  | Password   |
 | ------------- | ---------------------- | ---------- |
-| Administrator | admin@storefront.local | DemoPass!1 |
-| Store Owner   | owner@storefront.local | DemoPass!1 |
-| Normal User   | user@storefront.local  | DemoPass!1 |
+| Administrator | admin@shoppulse.local | DemoPass!1 |
+| Store Owner   | owner@shoppulse.local | DemoPass!1 |
+| Normal User   | customer@shoppulse.local  | DemoPass!1 |
 
 These credentials are local/demo-only and must not be used for a public deployment.
 

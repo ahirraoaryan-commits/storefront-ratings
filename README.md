@@ -1,4 +1,4 @@
-# Storefront Ratings
+# ShopPulse
 
 > A secure, role-based platform for discovering stores and managing one rating per customer — built for the **FullStack Intern Coding Challenge · V1.1**.
 
@@ -118,9 +118,9 @@ After seeding, these **local/demo-only** accounts are available. They are intent
 
 | Role          | Email                    | Password     |
 | ------------- | ------------------------ | ------------ |
-| Administrator | `admin@storefront.local` | `DemoPass!1` |
-| Store Owner   | `owner@storefront.local` | `DemoPass!1` |
-| Normal User   | `user@storefront.local`  | `DemoPass!1` |
+| Administrator | `admin@shoppulse.local` | `DemoPass!1` |
+| Store Owner   | `owner@shoppulse.local` | `DemoPass!1` |
+| Normal User   | `customer@shoppulse.local`  | `DemoPass!1` |
 
 The seeded store owner is linked to the seeded store, and the seeded normal user has a sample rating. To evaluate registration, create a new account and retrieve its OTP from MailHog.
 
